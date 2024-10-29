@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+  background-color: #f4f6fa;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: auto;
+}
+
+.itemList, .dropZone {
+  flex: 1;
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #ddd; 
+  transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.columnTitle {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #161925;
+  margin-bottom: 10px;
+}
+
+.placeholderText {
+  font-size: 1.1em;
+  color: #8ea8c3;
+  text-align: center;
+}
+
+.draggableItem {
+  padding: 8px 15px;
+  margin: 6px 0;
+  background-color: #f0e4ff;
+  color: #23395b;
+  font-weight: 500;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000001a;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.draggableItem:hover {
+  transform: scale(1.03);
+}
+
+/* Drop Zone is active when an item is being dragged */
+.dropZoneActive {
+  background-color: #e6f8d1;
+  border-color: #ddf0c7; 
+}
+
+.dragOverPositionIndicator {
+  border: 2px dashed #9ad095;
+  background-color: #0000001a;
+}
